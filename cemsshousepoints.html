@@ -7,7 +7,7 @@
   <style>
     /* General Styling */
     body {
-      font-family: Arial, sans-serif;
+      font-family: Bernard MT condensed, sans-serif;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -73,7 +73,12 @@
     /* Bold and larger font for Total Heats */
     .table tr:last-child td {
       font-weight: bold;
-      font-size: 1.5rem; 
+      font-size: 1.0rem; 
+    }
+
+    /* Right border for GREEN and RED cells */
+    .separator {
+      border-right: 2px solid #bbb; /* Light gray separator */
     }
 
     /* Responsive Adjustments */
@@ -117,43 +122,47 @@
     <div class="table-responsive">
       <table class="table">
         <thead class="table-dark">
-          <tr>
-            <th scope="col">CLASS</th>
-            <th scope="col" class="bg-green">GREEN</th>
-            <th scope="col" class="bg-red">RED</th>
-            <th scope="col" class="bg-blue">BLUE</th>
-            <th scope="col">EVENTS</th>
-          </tr>
+            <tr>
+                <th scope="col" style="border-bottom: 5px solid darkgrey;">CLASS</th>
+                <th scope="col" class="bg-green" style="border-bottom: 5px solid rgb(0, 165, 0);">GREEN</th>
+                <th scope="col" class="bg-red" style="border-bottom: 5px solid rgb(255, 62, 62);">RED</th>
+                <th scope="col" class="bg-blue" style="border-bottom: 5px solid rgb(0, 68, 255);">BLUE</th>
+                <th scope="col" style="border-bottom: 2px solid darkgrey;">EVENTS</th>
+            </tr>
         </thead>
         <tbody>
-          <tr class="class3">
-            <td class="bg-light-brown">UNDER14 (CLASS 3)</td>
-            <td class="bg-green">76</td>
-            <td class="bg-red">82</td>
-            <td class="bg-blue">84</td>
-            <td class="bg-light-brown">Shot Put and H.J.</td>
-          </tr>
+            <tr class="class3">
+                <td class="bg-light-brown" style="border-bottom: 5px solid darkgrey;">UNDER14 (CLASS 3)</td>
+                <td class="bg-light-brown" style="border-bottom: 5px solid rgb(0, 165, 0);"><span style="color: rgb(0, 165, 0);">121</span></td>
+                <td class="bg-light-brown" style="border-bottom: 5px solid rgb(255, 62, 62);"><span style="color: rgb(255, 62, 62);">130</span></td>
+                <td class="bg-light-brown" style="border-bottom: 5px solid rgb(0, 68, 255);"><span style="color: rgb(0, 68, 255);">129</span></td>
+                <td class="bg-light-brown" style="border-bottom: 5px solid darkgrey;">Shot Put and H.J.</td>
+            </tr>
+            
+
           <tr class="class2">
-            <td class="bg-light-brown">UNDER16 (CLASS 2)</td>
-            <td class="bg-green">112</td>
-            <td class="bg-red">129</td>
-            <td class="bg-blue">107</td>
-            <td class="bg-light-brown">Shot Put and H.J.</td>
+            <td class="bg-light-brown"style="border-bottom: 5px solid darkgrey;">UNDER16 (CLASS 2)</td>
+            <td class="bg-light-brown"style="border-bottom: 5px solid rgb(0, 165, 0);"><span style="color: rgb(0, 165, 0);"><span style="color: rgb(0, 165, 0);">171</span></td>
+            <td class="bg-light-brown"style="border-bottom: 5px solid rgb(255, 62, 62);"><span style="color: rgb(255, 62, 62);">195</span></td>
+            <td class="bg-light-brown"style="border-bottom: 5px solid rgb(0, 68, 255);"><span style="color: rgb(0, 68, 255);">149</td>
+            <td class="bg-light-brown"style="border-bottom: 5px solid darkgrey;">Shot Put and H.J.</td>
           </tr>
+
           <tr class="class1">
-            <td class="bg-light-brown">16 PLUS (CLASS 1)</td>
-            <td class="bg-green">124</td>
-            <td class="bg-red">87</td>
-            <td class="bg-blue">111</td>
-            <td class="bg-light-brown">Shot Put and H.J.</td>
+            <td class="bg-light-brown"style="border-bottom: 5px solid darkgrey;">16 PLUS (CLASS 1)</td>
+            <td class="bg-light-brown"style="border-bottom: 5px solid rgb(0, 165, 0);"><span style="color: rgb(0, 165, 0);"><span style="color: rgb(0, 165, 0);">191</span></td>
+            <td class="bg-light-brown"style="border-bottom: 5px solid rgb(255, 62, 62);"><span style="color: rgb(255, 62, 62);">137</span></td>
+            <td class="bg-light-brown"style="border-bottom: 5px solid rgb(0, 68, 255);"><span style="color: rgb(0, 68, 255);">183</td>
+            <td class="bg-light-brown"style="border-bottom: 5px solid darkgrey;">Shot Put and H.J.</td>
           </tr>
+    
           <!-- Total Heats Row -->
           <tr>
-            <td class="bg-light-brown fw-bold">TOTAL HEATS</td>
-            <td class="bg-green fw-bold">312</td>
-            <td class="bg-red fw-bold">298</td>
-            <td class="bg-blue fw-bold">302</td>
-            <td class="bg-light-brown fw-bold">Date: Thurs 31-Oct-2024</td>
+            <td class="bg-light-brown fw-light" style="font-size: 24px;">TOTAL HEATS</td>
+            <td class="bg-light-brown fw-light" style="font-size: 24px;"><span style="color: rgb(0, 165, 0);">483</span></td>
+            <td class="bg-light-brown fw-light" style="font-size: 24px;"><span style="color: rgb(255, 62, 62);">462</span></td>
+            <td class="bg-light-brown fw-light" style="font-size: 24px;"><span style="color: rgb(0, 68, 255);">461</span></td>     
+            <td class="bg-light-brown fw-light" style="font-size: 14px;">Date: Mon 11-Nov-2024</td>
           </tr>
         </tbody>
       </table>
